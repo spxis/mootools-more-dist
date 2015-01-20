@@ -1,5 +1,5 @@
 {
-  "name": "mootools-more",
+  "name": "mootools-more-dist",
   "version": "1.5.1",
   "description": "MooTools is a compact, modular, Object-Oriented JavaScript framework designed for the intermediate to advanced JavaScript developer.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mootools/mootools-more.git"
+    "url": "https://github.com/spxis/mootools-more-dist.git"
   },
   "keywords": [
     "mootools",
@@ -24,7 +24,7 @@
   "author": "MooTools Team",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mootools/mootools-more/issues"
+    "url": "https://github.com/spxis/mootools-more-dist/issues"
   },
   "homepage": "http://mootools.net",
   "devDependencies": {

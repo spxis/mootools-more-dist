@@ -19,7 +19,7 @@
 * Misc
   * All the code of MooTools More now uses MooTools Core 1.3 internally.
   * There is built-in compatibility for all API improvements, except for Element.get not setting anymore. See [the Core wiki](http://github.com/mootools/mootools-core/wiki/Update-from-1.2-to-1.3) for compatibility for this.
-  * Log.js is no more; [you can download it from source via github](http://github.com/mootools/mootools-more/blob/1.2.4.4/Source/Core/Log.js)
+  * Log.js is no more; [you can download it from source via github](http://github.com/spxis/mootools-more-dist/blob/1.2.4.4/Source/Core/Log.js)
 * Fx.Reveal
   * Revised Fx.Reveal. Element getters don't accept options anymore, so `Element.get('reveal', options)` is not possible anymore (just like Fx.Tween and Fx.Morph in Core).
 * Hash

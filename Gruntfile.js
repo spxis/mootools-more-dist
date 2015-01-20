@@ -44,7 +44,7 @@ module.exports = function(grunt) {
 
 			all: {
 				src: ['node_modules/mootools-core/Source/**/*.js', 'Source/**/*.js'],
-				dest: 'mootools-more-all.js'
+				dest: 'dist/mootools-more-all.js'
 			},
 
 			morenocompat: {
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
 					only: '<%= grunt.option("file") && "More/" + grunt.option("file") %>'
 				},
 				src: ['node_modules/mootools-core/Source/**/*.js', 'Source/**/*.js'],
-				dest: 'mootools-more-nocompat.js'
+				dest: 'dist/mootools-more-nocompat.js'
 			},
 
 			specs: {
@@ -62,7 +62,7 @@ module.exports = function(grunt) {
 					ignoreYAMLheader: true
 				},
 				src: 'Specs/<%= grunt.option("module") || "**" %>/<%= grunt.option("file") || "*" %>.js',
-				dest: 'mootools-more-specs.js'
+				dest: 'dist/mootools-more-specs.js'
 			},
 
 			'specs-nocompat': {
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
 					only: '<%= grunt.option("file") && "Specs/" + grunt.option("file") %>'
 				},
 				src: 'Specs/**/*.js',
-				dest: 'mootools-specs.js'
+				dest: 'dist/mootools-specs.js'
 			}
 
 		},
@@ -194,7 +194,7 @@ module.exports = function(grunt) {
 						version: '6',
 						deviceOrientation: 'portrait'
 					}
-				},
+				}
 			},
 
 			continuous: {
@@ -227,7 +227,10 @@ module.exports = function(grunt) {
 	var tasks = travisBuild == 'default' ? compatBuild : nocompatBuild;
 	tasks =  pullRequest != 'false' ? tasks.concat('karma:continuous') : tasks.concat('karma:sauceTask');
 
-	grunt.registerTask('default', compatBuild.concat('karma:continuous'));
-	grunt.registerTask('nocompat', nocompatBuild.concat('karma:continuous'));
-	grunt.registerTask('default:travis', tasks);
+	//grunt.registerTask('default', compatBuild.concat('karma:continuous'));
+	//grunt.registerTask('nocompat', nocompatBuild.concat('karma:continuous'));
+	//grunt.registerTask('default:travis', tasks);
+
+    grunt.registerTask('default', ['clean', 'packager:all', 'packager:specs', 'packager:morenocompat', 'packager:specs-nocompat']);
+
 };

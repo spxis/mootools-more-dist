@@ -50,7 +50,7 @@ Mask Method: constructor
 
 ### Styles
 
-The mask element is not styled, so if you don't add a css rule in your style sheets, it will be invisible. You can download the default styles here: [mask.css](http://github.com/mootools/mootools-more/raw/master/Styles/Interface/Mask/mask.css)
+The mask element is not styled, so if you don't add a css rule in your style sheets, it will be invisible. You can download the default styles here: [mask.css](http://github.com/spxis/mootools-more-dist/raw/master/Styles/Interface/Mask/mask.css)
 
 Mask Method: toggle {#Mask:toggle}
 --------------------------------------

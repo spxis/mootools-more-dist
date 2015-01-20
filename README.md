@@ -11,7 +11,7 @@ You are welcome to contribute to MooTools! What we ask of you:
 a. __To report a bug:__
 
    1. Create a [jsFiddle](http://jsfiddle.net/) with the minimal amount of code to reproduce the bug.
-   2. Create a [Github Issue](https://github.com/mootools/mootools-more/issues), and link to the jsFiddle.
+   2. Create a [Github Issue](https://github.com/spxis/mootools-more-dist/issues), and link to the jsFiddle.
 
 b. __To fix a bug:__
 
@@ -121,5 +121,5 @@ Support:
 ## More Information
 
  - [See the MooTools Wiki for more information](http://github.com/mootools/mootools-core/wikis)
- - [See the MooTools More changelog](https://github.com/mootools/mootools-more/blob/master/changelog.md)
+ - [See the MooTools More changelog](https://github.com/spxis/mootools-more-dist/blob/master/changelog.md)
  
