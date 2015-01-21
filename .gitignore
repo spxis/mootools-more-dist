@@ -8,4 +8,4 @@ node_modules
 #mootools-more-specs.js
 sauce*.log
 
-.idea
+.idea*
